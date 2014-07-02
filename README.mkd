@@ -4,7 +4,7 @@
 
 ### Usage
 
-  The plugin defines a command `SyncSchemes`:
+  The plugin defines a command `SyncSchemes` :
 
     SyncSchemes colorscheme-name
 
@@ -13,6 +13,6 @@
 
     SyncSchemes
 
-### Requires
+### Requirements
 
-  Vim compiled with +clientserver feature.
+  Requires Vim compiled with +clientserver feature.
