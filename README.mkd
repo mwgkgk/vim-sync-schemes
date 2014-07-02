@@ -1,0 +1,18 @@
+## vim-sync-schemes
+
+  Synchronize color schemes between running Vim instances.
+
+### Usage
+
+  The plugin defines a command `SyncSchemes`:
+
+    SyncSchemes colorscheme-name
+
+  When used without args, sets the current colorscheme (from `g:colors_name` )
+  in all running Vim instances:
+
+    SyncSchemes
+
+### Requires
+
+  Vim compiled with +clientserver feature.
