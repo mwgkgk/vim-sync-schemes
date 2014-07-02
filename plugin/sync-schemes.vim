@@ -10,8 +10,7 @@ function! SyncSchemes(...)
     endif
     let servers = split(serverlist(), '\n')
     for serv in servers
-        let result = remote_send(serv, 
-            ":silent! colorscheme " . scheme . "<CR>")
+        let res = remote_send(serv, ":silent! colorscheme " . scheme . "<CR>")
     endfor
 endfunc
 
