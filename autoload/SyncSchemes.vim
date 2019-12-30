@@ -1,4 +1,4 @@
-function! SyncSchemes(...)
+function! SyncSchemes#sync(...)
     if a:0 == 0
         let scheme = g:colors_name
     elseif a:0 == 1
@@ -10,8 +10,6 @@ function! SyncSchemes(...)
     endif
     let servers = split(serverlist(), '\n')
     for serv in servers
-        let res = remote_send(serv, ":silent! colorscheme " . scheme . "<CR>")
+        let res = remote_send(serv, ':silent! colorscheme ' . scheme . '<CR>')
     endfor
 endfunc
-
-command! -nargs=? -complete=color SyncSchemes call SyncSchemes(<q-args>)
